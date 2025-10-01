@@ -1,0 +1,44 @@
+# Ignoră folderul Carti/
+
+Carti/
+# Fișiere binare și build
+bin/
+obj/
+out/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# Configuri locale IDE
+.vscode/
+.vs/
+.idea/
+
+# Fișiere temporare OS
+*.log
+*.tmp
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Fișiere cache
+*.db
+*.DS_Store
+Thumbs.db
+
+# Fișierele de publicare
+publish/
+*.publish.xml
+
+# Pachete NuGet descărcate local
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Cache Roslyn și Rider
+*.ide/
+.vscode-test/
