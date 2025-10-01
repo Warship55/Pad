@@ -796,23 +796,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ionce\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lungu\\.nuget\\packages\\": {},
+    "E:\\Programe\\Visual_studio\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ionce\\OneDrive\\Desktop\\multi folder\\Anul4\\PAD\\PAD1\\BrokerServer\\BrokerServer.csproj",
+      "projectUniqueName": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_2\\BrokerServer\\BrokerServer.csproj",
       "projectName": "BrokerServer",
-      "projectPath": "C:\\Users\\ionce\\OneDrive\\Desktop\\multi folder\\Anul4\\PAD\\PAD1\\BrokerServer\\BrokerServer.csproj",
-      "packagesPath": "C:\\Users\\ionce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ionce\\OneDrive\\Desktop\\multi folder\\Anul4\\PAD\\PAD1\\BrokerServer\\obj\\",
+      "projectPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_2\\BrokerServer\\BrokerServer.csproj",
+      "packagesPath": "C:\\Users\\lungu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_2\\BrokerServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Programe\\Visual_studio\\SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ionce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lungu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -839,7 +839,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -878,7 +878,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

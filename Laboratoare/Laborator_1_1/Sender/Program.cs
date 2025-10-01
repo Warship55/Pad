@@ -11,20 +11,19 @@ class Sender
         {
             IPEndPoint brokerEndpoint = new IPEndPoint(IPAddress.Loopback, 5001);
             Socket senderSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
             senderSocket.Connect(brokerEndpoint);
 
-            Console.WriteLine("Introdu tipul mesajului (ex: Info, Alert, Error):");
+            Console.WriteLine("Tip mesaj (Info, Alert, Error):");
             string type = Console.ReadLine();
 
-            Console.WriteLine("Introdu conținutul mesajului:");
+            Console.WriteLine("Conținut mesaj:");
             string content = Console.ReadLine();
 
             string message = $"{{ \"Type\": \"{type}\", \"Content\": \"{content}\" }}";
             byte[] buffer = Encoding.UTF8.GetBytes(message);
 
             senderSocket.Send(buffer);
-            Console.WriteLine($"[Sender] Message sent to Broker: {message}");
+            Console.WriteLine($"[Sender] Message sent: {message}");
 
             senderSocket.Shutdown(SocketShutdown.Both);
             senderSocket.Close();

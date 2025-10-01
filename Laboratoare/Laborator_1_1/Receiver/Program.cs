@@ -8,72 +8,53 @@ class Receiver
 {
     static void Main()
     {
-        int myPort = 6000;
-        IPEndPoint endPoint = new IPEndPoint(IPAddress.Loopback, myPort);
-        Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        Console.WriteLine("Introdu tagurile pe care vrei să le primești (ex: Info,Alert):");
+        string tags = Console.ReadLine();
 
-        listener.Bind(endPoint);
-        listener.Listen(10);
+        Socket brokerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        brokerSocket.Connect(new IPEndPoint(IPAddress.Loopback, 5001));
 
-        Console.WriteLine($"Receiver started on port {myPort}");
+        // Trimite subscripția
+        string subscribeMessage = $"SUBSCRIBE:{tags}";
+        brokerSocket.Send(Encoding.UTF8.GetBytes(subscribeMessage));
+        Console.WriteLine($"[Receiver] Subscribed for tags: {tags}");
 
-        Console.WriteLine("Introdu tagurile de mesaje pe care vrei să le primești (separate prin virgulă):");
-        string tags = Console.ReadLine(); // ex: Info,Alert
-
-        // Trimite subscripția la Broker
-        using (Socket brokerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
+        // Ascultă mesaje într-un thread
+        Thread listenThread = new Thread(() =>
         {
-            brokerSocket.Connect(new IPEndPoint(IPAddress.Loopback, 5001));
-            string subscribeMessage = $"SUBSCRIBE:{myPort}:{tags}";
-            brokerSocket.Send(Encoding.UTF8.GetBytes(subscribeMessage));
-        }
-
-        // Rulează un thread care ascultă mesaje
-        Thread listenerThread = new Thread(() =>
-        {
+            byte[] buffer = new byte[2048];
             while (true)
             {
                 try
                 {
-                    Socket client = listener.Accept();
-                    ThreadPool.QueueUserWorkItem(HandleMessage, client);
+                    int received = brokerSocket.Receive(buffer);
+                    if (received == 0) break;
+
+                    string message = Encoding.UTF8.GetString(buffer, 0, received);
+                    Console.WriteLine($"[Receiver] Got: {message}");
                 }
-                catch { break; }
+                catch
+                {
+                    Console.WriteLine("[Receiver] Disconnected from Broker.");
+                    break;
+                }
             }
         });
-        listenerThread.Start();
+        listenThread.IsBackground = true;
+        listenThread.Start();
 
-        // Așteaptă ca utilizatorul să apese Enter pentru ieșire
-        Console.WriteLine("Apasă Enter pentru a închide Receiver-ul...");
+        Console.WriteLine("Apasă Enter pentru a ieși...");
         Console.ReadLine();
 
-        // Trimite UNSUBSCRIBE
-        using (Socket brokerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
-        {
-            brokerSocket.Connect(new IPEndPoint(IPAddress.Loopback, 5001));
-            string unsubscribeMessage = $"UNSUBSCRIBE:{myPort}";
-            brokerSocket.Send(Encoding.UTF8.GetBytes(unsubscribeMessage));
-        }
-
-        Console.WriteLine("Receiver unsubscribed și închis.");
-        listener.Close();
-    }
-
-    static void HandleMessage(object obj)
-    {
         try
         {
-            Socket client = (Socket)obj;
-            byte[] buffer = new byte[2048];
-            int received = client.Receive(buffer);
-            string message = Encoding.UTF8.GetString(buffer, 0, received);
-            Console.WriteLine($"[Receiver] Got: {message}");
-            client.Shutdown(SocketShutdown.Both);
-            client.Close();
+            string unsubscribeMessage = $"UNSUBSCRIBE";
+            brokerSocket.Send(Encoding.UTF8.GetBytes(unsubscribeMessage));
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"[Receiver] Error: {ex.Message}");
-        }
+        catch { }
+
+        brokerSocket.Shutdown(SocketShutdown.Both);
+        brokerSocket.Close();
+        Console.WriteLine("[Receiver] Closed.");
     }
 }

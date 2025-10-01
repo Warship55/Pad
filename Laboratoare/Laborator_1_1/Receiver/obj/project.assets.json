@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1\\Receiver\\Receiver.csproj",
+      "projectUniqueName": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_1\\Receiver\\Receiver.csproj",
       "projectName": "Receiver",
-      "projectPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1\\Receiver\\Receiver.csproj",
+      "projectPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_1\\Receiver\\Receiver.csproj",
       "packagesPath": "C:\\Users\\lungu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1\\Receiver\\obj\\",
+      "outputPath": "C:\\Users\\lungu\\Desktop\\Universitate\\Anul 4\\Sem1\\PAD\\Laboratoare\\Laborator_1_1\\Receiver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Programe\\Visual_studio\\SDK\\NuGetPackages"

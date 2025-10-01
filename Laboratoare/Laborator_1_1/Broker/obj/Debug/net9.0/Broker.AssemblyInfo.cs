@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Broker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e550f4175a0dccef762d6425a7bc9820fcec5d6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Broker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Broker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
