@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "BrokerSystem";
+
+package broker;
+
+message Message {
+  string sender = 1;
+  string recipient = 2;
+  string content = 3;
+  repeated string tags = 4;
+}
+
+message Response {
+  bool success = 1;
+  string info = 2;
+}
+
+message SubscribeRequest {
+  string recipient = 1;
+  repeated string tags = 2;
+}
+
+service BrokerService {
+  rpc SendMessage(Message) returns (Response);
+  rpc Subscribe(SubscribeRequest) returns (stream Message);
+}

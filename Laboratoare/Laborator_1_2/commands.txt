@@ -1,0 +1,6 @@
+dotnet run --project BrokerServer
+
+dotnet run --project BrokerClient -- send spam "Hello, this is a spam message"
+
+dotnet run --project BrokerClient -- receive spam
+

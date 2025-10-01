@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "zTNE/1wXQDM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ionce\\OneDrive\\Desktop\\multi folder\\Anul4\\PAD\\PAD1\\BrokerClient\\BrokerClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ionce\\.nuget\\packages\\google.protobuf\\3.30.2\\google.protobuf.3.30.2.nupkg.sha512",
+    "C:\\Users\\ionce\\.nuget\\packages\\grpc.core.api\\2.71.0\\grpc.core.api.2.71.0.nupkg.sha512",
+    "C:\\Users\\ionce\\.nuget\\packages\\grpc.net.client\\2.71.0\\grpc.net.client.2.71.0.nupkg.sha512",
+    "C:\\Users\\ionce\\.nuget\\packages\\grpc.net.common\\2.71.0\\grpc.net.common.2.71.0.nupkg.sha512",
+    "C:\\Users\\ionce\\.nuget\\packages\\grpc.tools\\2.72.0\\grpc.tools.2.72.0.nupkg.sha512",
+    "C:\\Users\\ionce\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
