@@ -1,0 +1,14 @@
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\bin\Debug\net9.0\Sender.exe
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\bin\Debug\net9.0\Sender.deps.json
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\bin\Debug\net9.0\Sender.runtimeconfig.json
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\bin\Debug\net9.0\Sender.dll
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\bin\Debug\net9.0\Sender.pdb
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.AssemblyInfoInputs.cache
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.AssemblyInfo.cs
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.csproj.CoreCompileInputs.cache
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.dll
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\refint\Sender.dll
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.pdb
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\Sender.genruntimeconfig.cache
+C:\Users\lungu\Desktop\Universitate\Anul 4\Sem1\PAD\Laboratoare\Laborator_1\Sender\obj\Debug\net9.0\ref\Sender.dll
