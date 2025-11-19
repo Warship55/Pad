@@ -1,0 +1,6 @@
+@DWNode_HostAddress = http://localhost:5113
+
+GET {{DWNode_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
